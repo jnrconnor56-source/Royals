@@ -1,0 +1,6 @@
+{
+  "name": "Royals Connect",
+  "description": "Ghanaian SHS Alumni Network & Live Radar",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,68 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "fields": {
+        "fullName": "string",
+        "username": "string",
+        "email": "string",
+        "avatar": "string",
+        "shsSchool": "string",
+        "course": "string",
+        "stream": "string",
+        "gradYear": "number",
+        "personalPhone": "string",
+        "parentPhone": "string",
+        "city": "string",
+        "country": "string",
+        "lat": "number",
+        "lng": "number",
+        "isOnline": "boolean",
+        "lastActive": "timestamp",
+        "privacy": {
+          "globalLocationSharing": "boolean",
+          "ghostMode": "boolean",
+          "friendsOnlyLocation": "boolean",
+          "showPersonalPhone": "boolean",
+          "showParentPhone": "boolean",
+          "blockedFriendIds": "array"
+        }
+      }
+    },
+    "Message": {
+      "path": "channels/{channelId}/messages/{messageId}",
+      "fields": {
+        "senderId": "string",
+        "senderName": "string",
+        "senderAvatar": "string",
+        "senderStream": "string",
+        "content": "string",
+        "timestamp": "timestamp",
+        "isInTown": "boolean"
+      }
+    },
+    "FriendRequest": {
+      "path": "friendRequests/{requestId}",
+      "fields": {
+        "senderId": "string",
+        "senderName": "string",
+        "senderAvatar": "string",
+        "senderSchool": "string",
+        "senderStream": "string",
+        "receiverId": "string",
+        "receiverName": "string",
+        "initialNote": "string",
+        "status": "string",
+        "timestamp": "timestamp"
+      }
+    },
+    "Friendship": {
+      "path": "friends/{friendshipId}",
+      "fields": {
+        "user1Id": "string",
+        "user2Id": "string",
+        "timestamp": "timestamp"
+      }
+    }
+  }
+}
